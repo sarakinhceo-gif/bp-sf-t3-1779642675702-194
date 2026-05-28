@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <title>정보 | 화곡 셔츠룸 서버 웜업 - 마포</title>
+    <meta name="description" content="화곡 셔츠룸의 서버 웜업, 이제는 정보가 무기다. 마포에서 시작된 기술적 혁신, 시스템의 모든 것을 낱낱이 공개한다. 준비된 자만이 승리한다.">
+    <meta name="keywords" content="화곡 셔츠룸, 서버 웜업, 마포, 셔츠룸 정보, 서버 웜업 기술, 화곡, 마포 셔츠룸">
+    <link rel="canonical" href="https://sf-t3-1779642675702-194.pages.dev/info">
+    <meta property="og:title" content="정보 | 화곡 셔츠룸 서버 웜업 - 마포">
+    <meta property="og:description" content="화곡 셔츠룸의 서버 웜업, 이제는 정보가 무기다. 마포에서 시작된 기술적 혁신, 시스템의 모든 것을 낱낱이 공개한다.">
+    <style>
+        /* reset & base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Suisse Intl', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #0c0c0c;
+            color: #e0e0e0;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        img, svg {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        /* layout */
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 16px;
+            }
+        }
+        section {
+            padding: 80px 0;
+        }
+        @media (max-width: 768px) {
+            section {
+                padding: 56px 0;
+            }
+        }
+        /* typography */
+        h1 {
+            font-size: clamp(2.6rem, 6vw, 5rem);
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            line-height: 1.05;
+            text-transform: uppercase;
+            color: #f5f5f5;
+        }
+        h2 {
+            font-size: clamp(1.6rem, 3.5vw, 3rem);
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+            margin-bottom: 24px;
+            color: #f5f5f5;
+        }
+        h3 {
+            font-size: clamp(1.2rem, 2vw, 1.8rem);
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            color: #f5f5f5;
+        }
+        p {
+            font-size: clamp(1rem, 1.4vw, 1.125rem);
+            font-weight: 400;
+            margin-bottom: 16px;
+            color: #b0b0b0;
+        }
+        .accent {
+            color: #ff4d4d;
+            font-weight: 700;
+        }
+        .brutal-border {
+            border: 3px solid #ff4d4d;
+            padding: 24px;
+            margin: 24px 0;
+            transition: all 0.2s ease;
+        }
+        .brutal-border:hover {
+            border-color: #f5f5f5;
+            background: rgba(255, 77, 77, 0.05);
+        }
+        /* header & nav */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(12, 12, 12, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 77, 77, 0.3);
+        }
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 24px;
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+        .nav-logo {
+            font-size: 1.4rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            color: #f5f5f5;
+        }
+        .nav-logo .accent {
+            color: #ff4d4d;
+        }
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            list-style: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .nav-links a {
+            position: relative;
+            padding: 4px 0;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover {
+            color: #ff4d4d;
+        }
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #ff4d4d;
+            transition: width 0.3s;
+        }
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 8px;
+        }
+        .hamburger span {
+            display: block;
+            width: 28px;
+            height: 3px;
+            background: #f5f5f5;
+            transition: all 0.3s;
+        }
+        .tel-link {
+            display: inline-block;
+            background: #ff4d4d;
+            color: #0c0c0c;
+            font-weight: 700;
+            padding: 8px 20px;
+            border-radius: 0;
+            font-size: 0.95rem;
+            transition: background 0.2s, transform 0.1s;
+        }
+        .tel-link:hover {
+            background: #ff3333;
+            transform: scale(0.97);
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: rgba(12, 12, 12, 0.98);
+                flex-direction: column;
+                padding: 24px;
+                gap: 16px;
+                border-bottom: 1px solid #ff4d4d;
+            }
+            .nav-links.open {
+                display: flex;
+            }
+            .hamburger {
+                display: flex;
+            }
+        }
+        /* hero */
+        .hero {
+            padding: 140px 0 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -30%;
+            right: -20%;
+            width: 60%;
+            height: 100%;
+            background: radial-gradient(circle at 70% 30%, rgba(255,77,77,0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        @media (max-width: 768px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+        }
+        .hero-content h1 {
+            margin-bottom: 20px;
+        }
+        .hero-content p {
+            font-size: clamp(1.1rem, 1.6vw, 1.3rem);
+            max-width: 480px;
+        }
+        .hero-visual {
+            background: #1a1a1a;
+            height: 320px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #2a2a2a;
+            position: relative;
+        }
+        .hero-visual span {
+            font-size: 4rem;
+            font-weight: 800;
+            color: #ff4d4d;
+            opacity: 0.3;
+        }
+        /* info cards */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+        }
+        @media (max-width: 768px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .info-card {
+            background: #111;
+            border: 1px solid #2a2a2a;
+            padding: 32px;
+            transition: border-color 0.2s, transform 0.2s;
+        }
+        .info-card:hover {
+            border-color: #ff4d4d;
+            transform: translateY(-4px);
+        }
+        .info-card .accent {
+            display: block;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: 8px;
+        }
+        .info-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+        }
+        .info-card p {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 0;
+        }
+        /* stats */
+        .stats-row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 24px;
+            margin: 40px 0;
+        }
+        .stat-item {
+            flex: 1;
+            min-width: 120px;
+            text-align: center;
+            border: 1px solid #2a2a2a;
+            padding: 24px 16px;
+        }
+        .stat-item .num {
+            font-size: 2.6rem;
+            font-weight: 800;
+            color: #ff4d4d;
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+        .stat-item .label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #888;
+        }
+        /* cta section */
+        .cta-block {
+            background: #1a1a1a;
+            border-top: 3px solid #ff4d4d;
+            border-bottom: 3px solid #ff4d4d;
+            padding: 64px 0;
+            text-align: center;
+        }
+        .cta-block h2 {
+            margin-bottom: 12px;
+        }
+        .cta-block p {
+            max-width: 600px;
+            margin: 0 auto 32px;
+        }
+        .cta-block .tel-link {
+            font-size: 1.2rem;
+            padding: 12px 36px;
+        }
+        /* footer */
+        footer {
+            border-top: 1px solid #2a2a2a;
+            padding: 32px 0;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #666;
+        }
+        footer a {
+            color: #ff4d4d;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-inner">
+            <div class="nav-logo">
+                <span class="accent">H</span>SG<br>화곡
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/">홈</a></li>
+                <li><a href="/info" style="color: #ff4d4d;">정보</a></li>
+                <li><a href="/service">서비스</a></li>
+                <li><a href="/contact">연락처</a></li>
+                <li><a href="tel:010-1234-5678" class="tel-link">바로 전화</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1>정보<br>는 <span class="accent">무기</span>다</h1>
+                    <p>화곡 셔츠룸의 서버 웜업 시스템. 마포에서 처음 선보이는 기술 스택, 그 빌드업의 전모를 공개한다. 겉핥기는 끝났다. 이제 진짜를 원한다면 읽어라.</p>
+                </div>
+                <div class="hero-visual">
+                    <span>HW</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-card">
+                    <span class="accent">01</span>
+                    <h3>서버 웜업이란?</h3>
+                    <p>단순한 사전 준비가 아니다. 시스템이 유휴 상태에서도 최대 성능을 유지하도록 하는 지능형 프리히팅 기술. 화곡 셔츠룸은 이 개념을 물리적 공간에 이식했다. 결과는 즉각적인 반응 속도와 완벽한 흐름.</p>
+                </div>
+                <div class="info-card">
+                    <span class="accent">02</span>
+                    <h3>왜 마포인가?</h3>
+                    <p>마포는 도시의 허브. 유동 인구, 데이터 트래픽, 감각의 밀도가 가장 높은 지역. 여기서 서버 웜업을 가동하면 시너지가 폭발한다. 위치가 곧 인프라다.</p>
+                </div>
+                <div class="info-card">
+                    <span class="accent">03</span>
+                    <h3>기술적 차별점</h3>
+                    <p>레거시 시스템을 갈아엎었다. 실
+</body>
+</html>
