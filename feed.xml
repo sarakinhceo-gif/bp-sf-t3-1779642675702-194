@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title><![CDATA[마포 화곡 셔츠룸]]></title>
-  <link>https://sf-t3-1779642675702-194.pages.dev</link>
-  <description><![CDATA[마포 서버 웜업 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
-  <language>ko-KR</language>
-  <pubDate>Thu, 28 May 2026 12:31:13 GMT</pubDate>
-  <lastBuildDate>Thu, 28 May 2026 12:31:13 GMT</lastBuildDate>
-  <atom:link href="https://sf-t3-1779642675702-194.pages.dev/feed.xml" rel="self" type="application/rss+xml" />
+  <title><![CDATA[서버 웜업]]></title>
+  <link>https://sf-t3-1779642675702-194.vercel.app</link>
+  <description><![CDATA[서버 웜업 - 화곡 셔츠룸 관련 최신 소식 및 가이드]]></description>
+  <language>ko</language>
+  <pubDate>Wed, 10 Jun 2026 17:49:44 GMT</pubDate>
+  <lastBuildDate>Wed, 10 Jun 2026 17:49:44 GMT</lastBuildDate>
+  <atom:link href="https://sf-t3-1779642675702-194.vercel.app/feed.xml" rel="self" type="application/rss+xml" />
   
     <item>
-      <title><![CDATA[마포 화곡 셔츠룸 - 공식 홈페이지 오픈 안내]]></title>
-      <link>https://sf-t3-1779642675702-194.pages.dev/</link>
-      <guid isPermaLink="true">https://sf-t3-1779642675702-194.pages.dev/</guid>
-      <description><![CDATA[마포 서버 웜업 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
-      <pubDate>Thu, 28 May 2026 12:31:13 GMT</pubDate>
+      <title><![CDATA[서버 웜업 해결 방법 총정리 — 전문가가 알려주는 5가지 팁]]></title>
+      <link>https://sf-t3-1779642675702-194.vercel.app/posts/guide-002-1x3c4z4.html</link>
+      <guid isPermaLink="true">https://sf-t3-1779642675702-194.vercel.app/posts/guide-002-1x3c4z4.html</guid>
+      <description><![CDATA[아, 진짜... 2021년 겨울, 서버실 온도가 42도까지 올라갔다. LG 트롬 세탁기가 에러코드 dE2를 떠올렸다. 이 코드는 배수 필터 문제가 아니라 도어락 센서 문제였다. ### 구체적인 맥락LG 제품 AS 숨은 노하우 / 식세기 린스 잔량 #### 실패 원인과 ]]></description>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
     </item>
 </channel>
 </rss>
